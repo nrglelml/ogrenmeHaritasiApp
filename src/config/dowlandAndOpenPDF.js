@@ -3,7 +3,7 @@ import FileViewer from 'react-native-file-viewer';
 import {Alert} from 'react-native';
 import axios from 'axios';
 
-export const downloadAndOpenPDF = async (url, fileName = 'plan.pdf') => {
+export const downloadAndOpenPDF = async (url, fileName = 'roadmap.pdf') => {
   try {
     const localPath = `${RNFS.DocumentDirectoryPath}/${fileName}`;
 

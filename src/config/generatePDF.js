@@ -1,7 +1,7 @@
 import axios from 'axios';
 import RNFS from 'react-native-fs';
 import {PermissionsAndroid, Platform} from 'react-native';
-import {BASE_URL} from '../../env';
+import {BASE_URL} from '@env';
 
 export const generatePDF = async (topic) => {
   try {

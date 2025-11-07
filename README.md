@@ -96,19 +96,19 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 
-
-
-@react-navigation/native	Sayfalar arası geçiş (router)
-@react-navigation/native-stack	Stack tabanlı sayfa geçişi
-react-native-dotenv	.env dosyasından IP adresi gibi bilgileri çekmek için
-rn-fetch-blob	PDF dosyası indirmek ve mobilde açmak için
-react-native-permissions	Android/iOS izin yönetimi
-react-native-fs	Dosya sistemi erişimi (indirme sonrası dosya açmak için)
+@react-navigation/native Sayfalar arası geçiş (router)
+@react-navigation/native-stack Stack tabanlı sayfa geçişi
+react-native-dotenv .env dosyasından IP adresi gibi bilgileri çekmek için
+rn-fetch-blob PDF dosyası indirmek ve mobilde açmak için
+react-native-permissions Android/iOS izin yönetimi
+react-native-fs Dosya sistemi erişimi (indirme sonrası dosya açmak için)
 
 npm install @react-navigation/native @react-navigation/native-stack
 npm install react-native-dotenv
 npm install rn-fetch-blob
 npm install react-native-permissions react-native-fs
 Android’de dosya indirme ve açma için AndroidManifest.xml içerisine gerekli izinlerin eklenmesi unutulmamalıdır.
+
 # .env
-BASE_URL=http:// 192.168.1.102:5000
+
+BASE_URL=http:// 192.168.1.105:5000 internete göre değişiyor

@@ -36,6 +36,7 @@ const AITalkComp = () => {
         topic: userInput.trim(),
         resourceUrl: resource_url,
         roadmapUrl: roadmap_url,
+        message: 'PDF planlarınız başarıyla oluşturuldu!',
       });
     } else {
       setConversation(prev => [
