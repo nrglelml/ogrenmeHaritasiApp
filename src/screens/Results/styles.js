@@ -1,32 +1,20 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
+
+const winWidth = Dimensions.get('window').width;
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
-    backgroundColor: '#f9f9f9',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  title: {
-    fontSize: 20,
-    fontWeight: '600',
-    marginBottom: 40,
-    color: '#333',
-    textAlign: 'center',
+  scrollContent: {
+    paddingBottom: winWidth * 0.07,
   },
-  downloadButton: {
-    backgroundColor: '#0057ff',
-    paddingVertical: 14,
-    paddingHorizontal: 25,
-    borderRadius: 10,
-    marginVertical: 12,
+  tabBarContainer: {
+    position: 'absolute',
+    bottom: 0,
     width: '100%',
-    alignItems: 'center',
-  },
-  downloadText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '500',
+    height: winWidth * 0.07,
+    backgroundColor: '#fff',
+    resizeMode: 'contain',
   },
 });

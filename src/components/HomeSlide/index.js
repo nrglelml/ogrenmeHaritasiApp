@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {View, Text, Image, ScrollView, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import {hero} from '../../assets/images';
 import {useNavigation} from '@react-navigation/native';
+import axios from 'axios';
+import {BASE_URL} from '@env';
 
 const HomeSlide = () => {
+  useEffect(() => {
+    
+    const wakeUpServer = async () => {
+      try {
+        console.log("Sunucu uyandırılıyor...");
+        await axios.get(`${BASE_URL}/`); 
+        console.log("Sunucu uyandı ve hazır!");
+      } catch (e) {
+        console.log("Sunucu henüz uyanamadı (Normal durum).");
+      }
+    };
+
+    wakeUpServer();
+  }, []);
   const navigation = useNavigation();
   return (
     <ScrollView contentContainerStyle={styles.container}>

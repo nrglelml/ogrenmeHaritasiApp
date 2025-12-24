@@ -3,21 +3,20 @@ import React from 'react';
 import styles from './styles';
 import {Header, ResultsComp, TapBar} from '../../components';
 
-
-const Results = () => {
+const Results = ({route}) => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
 
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <ResultsComp  />
-  
+        <ResultsComp route={route} />
       </ScrollView>
 
       <View style={styles.tabBarContainer}>
         <TapBar />
       </View>
     </SafeAreaView>
+     
   );
 };
 
